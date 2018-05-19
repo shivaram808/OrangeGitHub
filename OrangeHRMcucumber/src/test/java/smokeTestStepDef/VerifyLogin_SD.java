@@ -6,13 +6,15 @@ import pageobjects.Loginpage;
 import testBase.BaseClass;
 
 public class VerifyLogin_SD extends BaseClass{
-
+	
 	Loginpage lg = new Loginpage(driver);
-		
+	
+			
 	@Given("^Login to the orange HRM application as a Admin$")
 	public void login_to_the_orange_HRM_application_as_a_Admin() throws Throwable {
 			System.out.println("Login to the application");
 			
+									 			
 			lg.AdminLogin("Admin", "admin");
 		}
 

@@ -1,17 +1,15 @@
 package testBase;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 
 public class BaseClass {
 	
 	public static WebDriver driver;
 	
-	@Before
+	
+
 	public void initializedriver()
 	{
 		
@@ -25,9 +23,10 @@ public class BaseClass {
 		
 	}
 	
-	@After
+
 	public void quitdriver()
 	{
+		driver.close();
 		System.out.println("Executed after method");
 	}
 	
