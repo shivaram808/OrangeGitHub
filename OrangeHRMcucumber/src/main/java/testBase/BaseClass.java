@@ -10,7 +10,7 @@ public class BaseClass {
 	
 	
 
-	public void initializedriver()
+	public static void initializedriver()
 	{
 		
 		System.out.println("Sarted executing before method");
